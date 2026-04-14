@@ -1,0 +1,11 @@
+{
+  "name": "Kali Linux",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y kali-archive-keyring && echo 'deb http://http.kali.org/kali kali-rolling main contrib non-free' | sudo tee /etc/apt/sources.list.d/kali.list && sudo apt-get update",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"]
+    }
+  },
+  "remoteUser": "vscode"
+}
